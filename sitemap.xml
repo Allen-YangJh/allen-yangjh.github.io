@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://allen-yangjh.github.io/categories/</loc>
+    <loc>https://allen-yangjh.github.io/</loc>
+    <lastmod>2019-11-20T18:06:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://allen-yangjh.github.io/</loc>
+    <loc>https://allen-yangjh.github.io/post/</loc>
+    <lastmod>2019-11-20T18:06:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://allen-yangjh.github.io/post/testblog/</loc>
+    <lastmod>2019-11-20T18:06:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://allen-yangjh.github.io/categories/</loc>
   </url>
   
   <url>
