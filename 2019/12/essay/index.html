@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Essay - Allen Yang&#39;s Blog
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="主要用于记录自己在项目工作和平时学习的过程中所碰到的Bug或疑难问题，方便回过头来查看复习。 不断更新&amp;hellip;
+" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>Essay - Allen Yang&#39;s Blog</title>
+  
+
+  <link rel="stylesheet" href="https://allen-yangjh.github.io/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
+  <meta property="og:title" content="Essay" />
+<meta property="og:description" content="主要用于记录自己在项目工作和平时学习的过程中所碰到的Bug或疑难问题，方便回过头来查看复习。
+不断更新&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://allen-yangjh.github.io/2019/12/essay/" />
+<meta property="article:published_time" content="2019-12-09T18:14:38+08:00" />
+<meta property="article:modified_time" content="2019-12-09T18:14:38+08:00" />
+<meta itemprop="name" content="Essay">
+<meta itemprop="description" content="主要用于记录自己在项目工作和平时学习的过程中所碰到的Bug或疑难问题，方便回过头来查看复习。
+不断更新&hellip;">
+
+
+<meta itemprop="datePublished" content="2019-12-09T18:14:38&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-09T18:14:38&#43;08:00" />
+<meta itemprop="wordCount" content="1089">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Essay"/>
+<meta name="twitter:description" content="主要用于记录自己在项目工作和平时学习的过程中所碰到的Bug或疑难问题，方便回过头来查看复习。
+不断更新&hellip;"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  
+
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/Allen-YangJh" target="_blank">
+            <img class="img-circle img-rotate" src="https://allen-yangjh.github.io/Avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Allen Yang</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Do more, Do better!</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>HangZhou, ZheJiang</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts">
+                    <i class="icon icon-archives-fill"></i>
+                  
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories">
+                    <i class="icon icon-folder"></i>
+                  
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags">
+                    <i class="icon icon-tags"></i>
+                  
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about">
+                    <i class="icon icon-cup-fill"></i>
+                  
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>  积累经验、积累知识、坚持积累。把实用的经验，分享给有需要的读者~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://allen-yangjh.github.io/categories/%E9%9A%8F%E7%AC%94/" class="category-list-link">随笔</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://allen-yangjh.github.io/2019/12/essay/" class="title">Essay</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-12-09 18:14:38 &#43;0800 CST" itemprop="datePublished">2019-12-09</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active">
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2019/12/essay/"
+    >Essay</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://allen-yangjh.github.io/2019/12/essay/" class="article-date">
+  <time datetime="2019-12-09 18:14:38 &#43;0800 CST" itemprop="datePublished">2019-12-09</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/"> 随笔 </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/essay/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1089字</span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      <p>主要用于记录自己在项目工作和平时学习的过程中所碰到的Bug或疑难问题，方便回过头来查看复习。
+<em>不断更新&hellip;</em></p>
+
+<hr />
+
+<ol>
+<li><p>JS中 <kbd>Array</kbd> 对象常用方法详解:</p>
+
+<ul>
+<li><p><strong>concat()</strong>  连接两个或个多的数组，并返回结果。传入的可以是具体值、也可以是数组对象。
+<em><u>该方法不改变原数组</u></em></p>
+
+<pre><code>let arr1 = [1, 2, 3];
+let arr2 = [4, 5];
+
+arr1.concat(arr2, 6);   // [1, 2, 3, 4, 5, 6]
+</code></pre></li>
+
+<li><p><strong>join()</strong>    把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔，如果省略该参数，则默认使用逗号作为分隔符。</p>
+
+<pre><code>let arr = [1, 2, 3];
+
+arr.join('|');  // &quot;1|2|3&quot;
+</code></pre></li>
+
+<li><p><strong>pop()</strong>     删除并返回数组的<b>最后一个元素</b>，把数组长度减 1。如果数组已经为空，则 pop() 不改变数组，并返回 undefined 值。</p>
+
+<pre><code>let arr = [1, 2, 3];
+
+arr.pop();  // 3
+</code></pre></li>
+
+<li><p><strong>shift()</strong>   删除并返回数组的<b>第一个元素</b>。</p>
+
+<pre><code>let arr = [1, 2, 3];
+
+arr.shift();  // 1
+</code></pre></li>
+
+<li><p><strong>push()</strong>    向数组的<b>末尾</b>添加一个或多个元素，返回新的长度。<br />
+<em>push() 方法和 pop() 方法使用数组提供的先进后出栈的功能。</em></p>
+
+<pre><code>let arr = [&quot;Bob&quot;, &quot;John&quot;];
+
+arr.push(&quot;James&quot;);      // 3
+console.log(arr);       // [&quot;Bob&quot;, &quot;John&quot;, &quot;James&quot;]
+</code></pre></li>
+
+<li><p><strong>unshift()</strong> 向数组的<b>开头</b>添加一个或多个元素，返回新的长度。该方法直接修改原数组，将参数插入数组的头部，将已经存在的元素顺次往后移。<br />
+<em>unshift() 方法无法在 Internet Explorer 中正确地工作！</em></p>
+
+<pre><code>let arr = [&quot;Bob&quot;, &quot;John&quot;];
+
+arr.unshift(&quot;James&quot;);   // 3
+console.log(arr);       // [&quot;James&quot;, &quot;Bob&quot;, &quot;John&quot;]
+</code></pre></li>
+
+<li><p><strong>reverse()</strong> 颠倒数组中元素的顺序。<br />
+<em>不常用</em></p></li>
+
+<li><p><strong>slice()</strong>   根据下标返回数组中选定的元素。包含start和end两个参数，可以为负数(从数组尾部开始算起)。如果 end 未被规定，会选取从 start 到数组结尾的所有元素。</p>
+
+<pre><code>let arr = [&quot;George&quot;, &quot;John&quot;, &quot;Thomas&quot;, &quot;James&quot;, &quot;Adrew&quot;];
+
+arr.slice(2);       // [&quot;Thomas&quot;, &quot;James&quot;, &quot;Adrew&quot;]
+arr.slice(2, 4);    // [&quot;Thomas&quot;, &quot;James&quot;]
+</code></pre></li>
+
+<li><p><strong>splice()</strong>  向数组指定位置删除或添加元素，返回被删除项目的新数组。删除的元素个数可以跟替换的元素个数不相等。</p>
+
+<pre><code>let arr = [&quot;Bob&quot;, &quot;John&quot;, &quot;James&quot;];
+// 1.添加1个元素
+arr.splice(1, 0, &quot;William&quot;);    // [] 如果没有删除元素则返回空
+console.log(arr);               // [&quot;Bob&quot;, &quot;William&quot;, &quot;John&quot;, &quot;James&quot;]
+// 2.删除1个元素
+arr = [&quot;Bob&quot;, &quot;John&quot;, &quot;James&quot;];
+
+arr.splice(1, 1);               // [&quot;John&quot;]
+console.log(arr);               // [&quot;Bob&quot;, &quot;James&quot;]
+// 3.删除2个元素 添加1个元素来替换
+arr = [&quot;Bob&quot;, &quot;John&quot;, &quot;James&quot;];
+
+arr.splice(1, 2, &quot;William&quot;);    // [&quot;John&quot;, &quot;James&quot;]
+console.log(arr);               // [&quot;Bob&quot;, &quot;William&quot;]
+</code></pre></li>
+
+<li><p><strong>sort()</strong>    对数组的元素进行排序。传入的必须是函数，如果没有传入参数，将按照[^内置算法]对元素进行排序。
+<em><u>该方法在原数组上进行排序</u></em><br />
+[^内置算法]: JS中sort实现的算法是O(n^2)的冒泡排序，并会将每一项通过toString()转型，即将每一项转化为ASCII进行比较。<br />
+如果想按照其他标准进行排序，就需要提供比较函数，该函数应该具有两个参数 a 和 b，其返回值如下：</p>
+
+<ul>
+<li>若 a 小于 b，则返回一个小于0的值。在排序后的数组中 a 将出现在 b 之前</li>
+<li>若 a 等于 b，则返回0。</li>
+
+<li><p>若 a 大于 b，则返回一个大于0的值。</p>
+
+<pre><code>let arr = [10, 5, 40, 25, 100, 1];
+
+// 内置算法会将数组中的每一项转化为ASCII进行比较，所以排序顺序有误。
+arr.sort();     // [1, 10, 25, 40, 5]
+
+// 常见的比较函数有：
+// 1.按照数值大小升序排序
+arr.sort(function(a,b){
+return a - b;
+})；            // [1, 5, 10, 25, 40, 100] 
+// 2.按照数值大小降序排序
+arr.sort(function(a,b){
+return b - a;
+});             // [100, 40, 25, 10, 5, 1] 
+// 3.按照对象的某一属性值排序
+arr = [
+{name: &quot;Bob&quot;, age: 13}, 
+{name: &quot;John&quot;, age: 22}, 
+{name: &quot;James&quot;, age: 7}
+];
+
+arr.sort(function(a, b){
+var value1 = a.age;
+var value2 = b.age;
+return value1 - value2;
+});
+// 4.打乱数组
+arr.sort(function(a,b){
+return Math.random() - 0.5;
+})
+</code></pre></li>
+</ul></li>
+</ul></li>
+</ol>
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://allen-yangjh.github.io/2019/12/essay/" title="Essay" target="_blank" rel="external">https://allen-yangjh.github.io/2019/12/essay/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Allen-YangJh" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://allen-yangjh.github.io/Avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Allen-YangJh" target="_blank"><span class="text-dark">Allen Yang</span><small class="ml-1x">Do more, Do better!</small></a></h3>
+        <div>不积跬步无以至千里，不积小流无以成江海。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,wechat"
+                data-mobile-sites="weibo,wechat"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/Allen-YangJh" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://allen-yangjh.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://allen-yangjh.github.io/js/application.js"></script>
+<script type="text/javascript" src="https://allen-yangjh.github.io/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/allen-yangjh.github.io\/',
+              CONTENT_URL: 'https:\/\/allen-yangjh.github.io\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://allen-yangjh.github.io/js/insight.js"></script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>
