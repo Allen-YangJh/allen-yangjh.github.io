@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        HTML 5 Web 本地存储 - Allen Yang&#39;s Blog
+        Java 入门基础知识点整理 - Allen Yang&#39;s Blog
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,34 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="localStorage、sessionStorage、Cookie的用法及区别。
+  <meta name="description" content="今年年初的时候，从C#转到Java开发，跟着大佬做了半年的业务开发，但是对于基础掌握的太少、所以自学了一些基础知识。
 " />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>HTML 5 Web 本地存储 - Allen Yang&#39;s Blog</title>
+  <title>Java 入门基础知识点整理 - Allen Yang&#39;s Blog</title>
   
 
   <link rel="stylesheet" href="https://allen-yangjh.github.io/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
-  <meta property="og:title" content="HTML 5 Web 本地存储" />
-<meta property="og:description" content="localStorage、sessionStorage、Cookie的用法及区别。" />
+  <meta property="og:title" content="Java 入门基础知识点整理" />
+<meta property="og:description" content="今年年初的时候，从C#转到Java开发，跟着大佬做了半年的业务开发，但是对于基础掌握的太少、所以自学了一些基础知识。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://allen-yangjh.github.io/2019/12/blog02/" />
-<meta property="article:published_time" content="2019-12-18T15:19:15+08:00" />
-<meta property="article:modified_time" content="2019-12-18T15:19:15+08:00" />
-<meta itemprop="name" content="HTML 5 Web 本地存储">
-<meta itemprop="description" content="localStorage、sessionStorage、Cookie的用法及区别。">
+<meta property="og:url" content="https://allen-yangjh.github.io/2019/12/blog03/" />
+<meta property="article:published_time" content="2019-12-22T14:56:42+08:00" />
+<meta property="article:modified_time" content="2019-12-22T14:56:42+08:00" />
+<meta itemprop="name" content="Java 入门基础知识点整理">
+<meta itemprop="description" content="今年年初的时候，从C#转到Java开发，跟着大佬做了半年的业务开发，但是对于基础掌握的太少、所以自学了一些基础知识。">
 
 
-<meta itemprop="datePublished" content="2019-12-18T15:19:15&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-18T15:19:15&#43;08:00" />
-<meta itemprop="wordCount" content="917">
+<meta itemprop="datePublished" content="2019-12-22T14:56:42&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-22T14:56:42&#43;08:00" />
+<meta itemprop="wordCount" content="2817">
 
 
 
-<meta itemprop="keywords" content="JavaScript," />
+<meta itemprop="keywords" content="Java," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HTML 5 Web 本地存储"/>
-<meta name="twitter:description" content="localStorage、sessionStorage、Cookie的用法及区别。"/>
+<meta name="twitter:title" content="Java 入门基础知识点整理"/>
+<meta name="twitter:description" content="今年年初的时候，从C#转到Java开发，跟着大佬做了半年的业务开发，但是对于基础掌握的太少、所以自学了一些基础知识。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -259,16 +259,20 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#前言">前言</a>
 <ul>
-<li><a href="#webstorage">webstorage</a>
-<ul>
-<li><a href="#1-localstorage">1. localStorage</a></li>
-<li><a href="#2-sessionstorage">2. sessionStorage</a></li>
-<li><a href="#localstorage-与-sessionstorage的比较">localStorage 与 sessionStorage的比较</a></li>
-<li><a href="#3-cookie">3. Cookie</a></li>
+<li><a href="#一-java语言发展">一、Java语言发展</a></li>
+<li><a href="#二-java语言特性">二、Java语言特性</a></li>
+<li><a href="#三-java程序的加载与执行">三、Java程序的加载与执行</a></li>
+<li><a href="#四-注释的作用">四、注释的作用</a></li>
+<li><a href="#五-jdk-jre-jvm-的关系">五、JDK/JRE/JVM 的关系</a></li>
 </ul></li>
-<li><a href="#localstorage-sessionstorage-cookie共同点-都是保存在浏览器端-且同源的">localStorage、sessionStorage、Cookie共同点：都是保存在浏览器端，且同源的。</a></li>
+<li><a href="#java程序开发">Java程序开发</a>
+<ul>
+<li><a href="#一-java开发环境配置">一、Java开发环境配置</a></li>
+<li><a href="#二-第一个hello-world程序">二、第一个Hello World程序</a></li>
+<li><a href="#三-java语言基础">三、Java语言基础</a></li>
+<li><a href="#四-java开发">四、Java开发</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -286,24 +290,24 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/12/blog02/"
-    >HTML 5 Web 本地存储</a
+    href="/2019/12/blog03/"
+    >Java 入门基础知识点整理</a
   >
 </h1>
 
       <div class="article-meta">
         <span class="article-date">
   <i class="icon icon-calendar-check"></i>
-<a href="https://allen-yangjh.github.io/2019/12/blog02/" class="article-date">
-  <time datetime="2019-12-18 15:19:15 &#43;0800 CST" itemprop="datePublished">2019-12-18</time>
+<a href="https://allen-yangjh.github.io/2019/12/blog03/" class="article-date">
+  <time datetime="2019-12-22 14:56:42 &#43;0800 CST" itemprop="datePublished">2019-12-22</time>
 </a>
 </span><span class="article-category">
   <i class="icon icon-folder"></i>
-  <a class="article-category-link" href="/categories/javascript/"> JavaScript </a>
+  <a class="article-category-link" href="/categories/java/"> Java </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-    <a class="article-tag-link" href="/tags/javascript/"> JavaScript </a>
+    <a class="article-tag-link" href="/tags/java/"> Java </a>
   </span>
 
 	<span class="article-read hidden-xs">
@@ -312,108 +316,441 @@
 			<span id="busuanzi_value_page_pv">0</span>
 		</span>
 	</span>
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/blog02/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/blog03/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:917字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:2817字</span>
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
-      <p>localStorage、sessionStorage、Cookie的用法及区别。</p>
+      <p>今年年初的时候，从C#转到Java开发，跟着大佬做了半年的业务开发，但是对于基础掌握的太少、所以自学了一些基础知识。</p>
 
 <hr />
 
-<h4 id="webstorage">webstorage</h4>
+<h3 id="前言">前言</h3>
 
-<p>webstorage是本地存储，存储在客户端，包括localStorage和sessionStorage。</p>
-
-<hr />
-
-<h5 id="1-localstorage">1. localStorage</h5>
-
-<p>方法存储的数据没有时间限制。<br />
-第二天、第二周或下一年之后，数据依然可用。</p>
-
-<h5 id="2-sessionstorage">2. sessionStorage</h5>
-
-<p>方法针对一个 session 进行数据存储。<br />
-当用户关闭浏览器窗口后，数据会被删除。</p>
-
-<p><br/>
-<em><u>键值对总是以字符串的形式存储</u></em><br />
-<em>localStorage和sessionStorage使用时使用相同的API：</em></p>
-
-<ul>
-<li><p>存储数据：</p>
-
-<pre><code>sessionStorage.setItem('key', 'str');
-localStorage.setItem('key', 'str');
-</code></pre></li>
-
-<li><p>获取数据：</p>
-
-<pre><code>sessionStorage.getItem('key');
-localStorage.getItem('key');
-</code></pre></li>
-
-<li><p>删除某个数据：</p>
-
-<pre><code>sessionStorage.removeItem('key');
-localStorage.removeItem('key');
-</code></pre></li>
-
-<li><p>删除所有数据：</p>
-
-<pre><code>sessionStorage.clear();
-localStorage.clear();
-</code></pre></li>
-</ul>
-
-<h5 id="localstorage-与-sessionstorage的比较">localStorage 与 sessionStorage的比较</h5>
-
-<ul>
-<li>作用域不同
+<h4 id="一-java语言发展">一、Java语言发展</h4>
 
 <ol>
-<li>不同的浏览器无法共享localStorage或sessionStorage中的信息。</li>
-<li>相同浏览器的不同页面之间（页面属于相同域名和端口）可以共享相同的 localStorage，但是不同页面或标签页间无法共享 sessionStorage 的信息。</li>
-</ol></li>
-</ul>
-
-<h5 id="3-cookie">3. Cookie</h5>
-
-<p>生命期为在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。<br />
-存放数据大小为4K左右。有个数限制（各浏览器不同），一般不能超过20个。<br />
-与服务器端通信：每次都会携带在HTTP头中，如果使用cookie保存过多数据会带来性能问题。</p>
+<li>Java诞生于1995年，原名Oak，由Sun公司开发的面向对象编程语言。(Sun公司目前被Oracle公司(甲骨文公司)收购)</li>
+<li>1996年发布JDK 1.0（第一个Java开发工具包）。
+目前较常用的JDK版本：Java 8/JDK 1.8/JDK 8</li>
+<li>Java三大块:
 
 <ul>
-<li><p><strong>cookie的优点：具有极高的扩展性和可用性</strong></p>
+<li>JavaSE（标准版）</li>
+<li>JavaEE（企业版）</li>
+<li>JavaME（微型版）</li>
+</ul></li>
+</ol>
 
-<ol>
-<li>通过良好的编程，控制保存在cookie中的session对象的大小。</li>
-<li>通过加密和安全传输技术，减少cookie被破解的可能性。</li>
-<li>只有在cookie中存放不敏感的数据，即使被盗取也不会有很大的损失。</li>
-<li>控制cookie的生命期，使之不会永远有效。这样的话偷盗者很可能拿到的就   是一个过期的cookie。</li>
-</ol></li>
+<h4 id="二-java语言特性">二、Java语言特性</h4>
 
-<li><p><strong>cookie的缺点：</strong></p>
+<ul>
+<li>简单性
+相对而言是简单的，不在支持多继承(C++)，屏蔽了指针的概念。</li>
+<li>面向对象
+三大特点： 封装、继承、多态</li>
+<li>可移植性（跨平台）
+Java程序可在Windows/Linux/Unix等操作系统上运行。<br />
+原理：Java程序运行在虚拟的计算机上，简称JVM。</li>
 
-<ol>
-<li>cookie的长度和数量的限制。每个domain最多只能有20条cookie，每个cookie长度不能超过4KB。否则会被截掉。</li>
-<li>安全性问题。如果cookie被人拦掉了，那个人就可以获取到所有session信息。加密的话也不起什么作用。</li>
-<li>有些状态不可能保存在客户端。例如，为了防止重复提交表单，我们需要在服务端保存一个计数器。若吧计数器保存在客户端，则起不到什么作用。</li>
-</ol></li>
+<li><p>多线程</p></li>
+
+<li><p>健壮性
+自动垃圾回收机制，简称GC机制。</p></li>
+
+<li><p>安全性
+Java底层是C++实现的，不是C语言。</p></li>
 </ul>
 
-<hr />
+<h4 id="三-java程序的加载与执行">三、Java程序的加载与执行</h4>
 
-<h4 id="localstorage-sessionstorage-cookie共同点-都是保存在浏览器端-且同源的">localStorage、sessionStorage、Cookie共同点：都是保存在浏览器端，且同源的。</h4>
+<ol>
+<li>xxx.java —— Java源文件</li>
+<li>检查源代码是否符合Java语法 —— 编译过程</li>
+<li>生成正常的字节码文件 xxx.class
+
+<ul>
+<li>字节码文件不是纯粹的二进制文件</li>
+<li>JDK中的javac.exe是Java编译工具/命令</li>
+</ul></li>
+<li>编译完成后，可以将xxx.class文件拷贝到其他操作系统中运行（跨平台）
+
+<ul>
+<li>JDK中除了javac.exe，还有一个java.exe是运行工具/命令</li>
+</ul></li>
+<li>在DOS窗口中运行，例如运行A.class，输入java A运行。
+
+<ul>
+<li>java [类名]     (java x.class   // 是错误的写法)</li>
+<li>java.exe 命令会启动Java虚拟机(JVM)、JVM启动类加载器classLoader</li>
+<li>找到类文件、装载到JVM中，解释成二进制数据</li>
+<li>在系统中执行二进制与底层交互</li>
+</ul></li>
+</ol>
+
+<h4 id="四-注释的作用">四、注释的作用</h4>
+
+<p>注释：对源代码的解释说明，不会被编译到字节码(class)文件中，提高代码可读性。</p>
+
+<ul>
+<li>单行注释      // &hellip;<br /></li>
+<li>多行注释      /* &hellip; */</li>
+<li>Javadoc注释<br />
+/**<br />
+*<br />
+*/<br />
+比较专业的注释，可以通过javadoc.exe工具解析提取并生成帮助文档</li>
+</ul>
+
+<h4 id="五-jdk-jre-jvm-的关系">五、JDK/JRE/JVM 的关系</h4>
+
+<ul>
+<li>JDK —— 开发过程中所需环境</li>
+<li>JRE —— Java运行环境</li>
+<li>JVM —— Java程序运行的虚拟机<br /></li>
+</ul>
+
+<p><img src="https://allen-yangjh.github.io/JDK.png" width="15%"></p>
+
+<h3 id="java程序开发">Java程序开发</h3>
+
+<h4 id="一-java开发环境配置">一、Java开发环境配置</h4>
+
+<ol>
+<li>安装JDK。常用版本JDK 8、最新JDK 11(LTS)
+
+<ul>
+<li><a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle官方下载</a></li>
+</ul></li>
+<li>环境变量PATH配置
+
+<ul>
+<li>编辑path，新增路径、指向JDK安装目录的bin文件夹下</li>
+<li>（可选）新增classpath，指定一个路径，使JVM类加载器到该路径下加载类文件。默认从当前目录下加载。</li>
+<li>在DOS窗口中输入javac -version检测安装成功</li>
+</ul></li>
+</ol>
+
+<h4 id="二-第一个hello-world程序">二、第一个Hello World程序</h4>
+
+<ul>
+<li><p>程序入口</p>
+
+<pre><code>public static void main(String[] args){
+// 主方法
+}
+</code></pre></li>
+
+<li><p>向控制台输出消息</p>
+
+<pre><code>System.out.println(&quot;Hello World&quot;);
+</code></pre></li>
+
+<li><p>类体  方法体</p></li>
+
+<li><p>Java语句必须以“;”结束</p></li>
+</ul>
+
+<blockquote>
+<p><strong>public class 和 class的区别</strong></p>
+
+<ul>
+<li>1个Java源文件中可以定义多个class</li>
+<li>public的class不是必须的</li>
+<li>每个class会对应生成一个x.class文件</li>
+<li>定义公开类时，一个源文件中只能有一个public classs，且该类名必须和文件名称一致</li>
+<li>每个class中都可以设定程序入口(main方法)</li>
+<li>要执行x.class时要求x类中必须有主方法</li>
+</ul>
+</blockquote>
+
+<h4 id="三-java语言基础">三、Java语言基础</h4>
+
+<ol>
+<li>标识符
+
+<ul>
+<li>命名规则（不按照规则，编译会报错）
+
+<ul>
+<li>只能由“数字、字母、下划线、$”组成</li>
+<li>不能以数字开头</li>
+<li>严格区分大小写</li>
+<li>不能使用关键字(public、static、void&hellip;)</li>
+</ul></li>
+<li>命名规范（不属于语法，个人习惯）
+
+<ul>
+<li>最好是见名知意</li>
+<li>遵守驼峰命名方式(UserName)</li>
+<li>类名、接口名：首字母大写、需驼峰式</li>
+<li>变量名、方法名：首字母小写、后续单词的首字母大写</li>
+<li>常量名：全部大写</li>
+</ul></li>
+</ul></li>
+
+<li><p>数据类型</p>
+
+<ul>
+<li>整数型<br />
+int/short/long/byte</li>
+<li>浮点型<br />
+float/double</li>
+<li>布尔型<br />
+boolean</li>
+<li>字符型<br />
+char</li>
+<li>字符串（引用数据类型）</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">byte</td>
+<td align="center">字节型</td>
+<td align="center">1字节</td>
+<td align="center">-128~127</td>
+</tr>
+
+<tr>
+<td align="center">short</td>
+<td align="center">短整型</td>
+<td align="center">2字节</td>
+<td align="center">-32768~32767</td>
+</tr>
+
+<tr>
+<td align="center">int</td>
+<td align="center">整型</td>
+<td align="center">4字节</td>
+<td align="center">-2147483648~2147483647</td>
+</tr>
+
+<tr>
+<td align="center">long</td>
+<td align="center">长整型</td>
+<td align="center">8字节</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">boolean</td>
+<td align="center">布尔型</td>
+<td align="center">1字节</td>
+<td align="center">true/false</td>
+</tr>
+
+<tr>
+<td align="center">char</td>
+<td align="center">字符型</td>
+<td align="center">2字节</td>
+<td align="center">0~65535</td>
+</tr>
+
+<tr>
+<td align="center">float</td>
+<td align="center">单精度浮点型</td>
+<td align="center">4字节</td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td align="center">double</td>
+<td align="center">双精度浮点型</td>
+<td align="center">8字节</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>容量从小到大排序： &nbsp; byte &lt; short / char &lt; int &lt; int &lt; long &lt; float &lt; doouble</strong></p></li>
+
+<li><p>类型转换</p>
+
+<ul>
+<li>在Java中、所有整数型的字面值都默认当做int类型处理，所有浮点型字面值都默认当做double类型处理。</li>
+
+<li><p>当一个整数字面值没有超过数据类型的取值范围时、这个值可直接赋值给该变量</p>
+
+<pre><code>short s = 32768;
+// shot取值范围-32768~32767，所以报错：Type mismatch
+</code></pre></li>
+
+<li><p>char、byte、short 混合运算时，各自先转成int类型再做运算</p></li>
+
+<li><p>多种数据类型的混合运算，先转换成容量最大的类型，再做运算</p></li>
+</ul>
+
+<blockquote>
+<p><strong>强制类型转换原理 long转int</strong></p>
+
+<ul>
+<li>原始数据 L100， 二进制表示：<br />
+00000000 00000000 00000000 00000000 00000000 0000000 00000000 01100100<br /></li>
+<li>强转过程，将前四位二进制去掉，得到：<br />
+00000000 0000000 00000000 01100100<br />
+<br /></li>
+</ul>
+
+<p><strong>强制转换时，可能损失一定的精度</strong></p>
+</blockquote></li>
+</ol>
+
+<h4 id="四-java开发">四、Java开发</h4>
+
+<ol>
+<li><p>键盘扫描器对象</p>
+
+<pre><code>java.util.Scanner scanner = java.util.Scanner(System.in);
+// 开始接受用户键盘输入
+// 1.接收文本，以字符串的形式
+String conten = scanner.next();
+// 2.接收数字，以整数型的形式。如果不是数字、则程序报错。
+Int num = scanner.nextInt();
+</code></pre></li>
+
+<li><p>垃圾回收 GC 方法</p>
+
+<pre><code>// 建议JVM调度GC尽快回收
+System.gc();
+
+// JVM运行时的对象
+Runtime rt = Runtime.getRuntime();
+// 1.获取最大内存
+rt.MaxMemory();
+// 2.获取初始内存
+rt.TotalMemory();
+// 3.获取空闲内存
+rt.FreeMemory();
+</code></pre></li>
+
+<li><p>抽象类</p>
+
+<ul>
+<li>抽象类不可以实例化</li>
+<li>抽象类中不一定必须有抽象方法，作用就是让该类不可实例化</li>
+</ul>
+
+<blockquote>
+<p><strong>abstract 和 final 的区别</strong><br />
+a.抽象类：<br />
+  &nbsp;&nbsp;天生就用来被继承，通过子类来实现抽象方法，不继承就没有意义。<br />
+b.final修饰类：<br />
+  &nbsp;&nbsp;专门用来禁止被继承。和抽象类刚好相反。<br />
+c.所以 abstract 和 final不能同时修饰一个类。</p>
+
+<p><strong>接口的定义</strong></p>
+
+<ul>
+<li>接口是一个标准，是一组抽象方法定义的结合，但所有的方法都没有实现。</li>
+<li>接口可以看作只包含抽象方法的抽象类。</li>
+<li>接口天生只能用来被继承，无法实例化。</li>
+<li>定义方法： [返回值类型] 方法名称([参数]);<br />
+在返回值类型，编译器会自动加上[public abstract]</li>
+</ul>
+</blockquote></li>
+
+<li><p>飞机大战小游戏 练习笔记
+<strong>Java图形界面 java.swing</strong></p>
+
+<ul>
+<li><p>JFrame 是GUI程序的基础，它是屏幕上的windows的对象，能够最大化/最小化/关闭。</p>
+
+<pre><code>JFame frame = new JFrame(&quot;程序名&quot;);
+// 设置窗口大小
+frame.setSize(width, height);
+// 设置窗口置顶
+frame.setAlwaysOnTop(true);
+// 设置窗口初始位置 null表居中
+frame.setLocationRelative(null)：
+</code></pre></li>
+
+<li><p>JPanel 是面板容器类，可以加入到JFrame窗体中。</p>
+
+<pre><code>JPanel panel = new JPanel();
+// 设置背景
+panel.setBackground(color);
+// 设置字体
+panel.setFont(Font);
+// 重写Paint方法 绘制界面
+@override
+public void paint(Graphics g) {
+// 画图片
+g.drawImage(image, x, y, null);
+// 写字
+g.drawString(str, x, y);
+}
+// 将画板加到Frame窗体中
+frame.add(panel);
+// JFrame窗口默认不可见，需手动显示
+frame.setVisible(true);
+</code></pre></li>
+
+<li><p>鼠标响应事件类 MouseAdapter</p>
+
+<pre><code>MouseAdapter l = new MouseAdapter(){
+// 重写需要响应的事件（点击、移动、移出/入）
+}
+// 添加监听器
+// 支持鼠标移动监听
+addMouseMotionListener(l);
+// 支持鼠标单击监听
+addMouseListener(l);
+</code></pre></li>
+
+<li><p>定时器类</p>
+
+<pre><code>Timer timer = new Timer();
+// 定时器任务类 需要重写run方法执行的任务
+TimerTask task = new TimerTask(){
+@override
+public void run(){
+    // do something
+}
+}
+// a.定时器隔多久后执行一次任务
+timer.schedule(task, delay);
+// b.定时器在指定时间执行
+timer.schedule(task, Date);
+// c.循环执行，每隔多久执行
+timer.schedule(task, delay, period);
+</code></pre></li>
+
+<li><p>数组扩容/压缩的方法</p>
+
+<pre><code>Int[] arr1 = new Int[2];
+// 方法一：
+// 1.定义新数组，长度为需扩容的大小
+Int[] arr2 = new Int[4];
+// 2.遍历旧数组，拷贝每一项
+for(...);
+
+// 方法二：
+Intp[] arr2 = java.util.Arrays.copyof(原数组, 新长度);
+
+// 方法三
+Int[] arr2 = new Int[4];
+System.arraycopy(原数组, 起始下标, 新数组, 起始下标, 复制长度);
+</code></pre></li>
+</ul></li>
+</ol>
     </div>
     <div class="article-footer">
 <blockquote class="mt-2x">
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接: </strong>
-      <a href="https://allen-yangjh.github.io/2019/12/blog02/" title="HTML 5 Web 本地存储" target="_blank" rel="external">https://allen-yangjh.github.io/2019/12/blog02/</a>
+      <a href="https://allen-yangjh.github.io/2019/12/blog03/" title="Java 入门基础知识点整理" target="_blank" rel="external">https://allen-yangjh.github.io/2019/12/blog03/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -445,14 +782,9 @@ localStorage.clear();
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://allen-yangjh.github.io/2019/12/essay01/" title="随笔01"><i
+                <a href="https://allen-yangjh.github.io/2019/12/blog02/" title="HTML 5 Web 本地存储"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://allen-yangjh.github.io/2019/12/blog03/"
-                    title="Java 入门基础知识点整理"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
