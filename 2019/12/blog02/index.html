@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Allen Yang&#39;s Blog</title>
+        HTML 5 Web 本地存储 - Allen Yang&#39;s Blog
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,26 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="localStorage、sessionStorage、Cookie的用法及区别。
+" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>Allen Yang&#39;s Blog</title>
+  <title>HTML 5 Web 本地存储 - Allen Yang&#39;s Blog</title>
   
 
-  <link rel="alternate" type="application/rss+xml" href="https://allen-yangjh.github.io/categories/index.xml" title="Allen Yang's Blog" />
   <link rel="stylesheet" href="https://allen-yangjh.github.io/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
-  <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://allen-yangjh.github.io/categories/" />
+  <meta property="og:title" content="HTML 5 Web 本地存储" />
+<meta property="og:description" content="localStorage、sessionStorage、Cookie的用法及区别。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://allen-yangjh.github.io/2019/12/blog02/" />
+<meta property="article:published_time" content="2019-12-21T15:19:15+08:00" />
+<meta property="article:modified_time" content="2019-12-21T15:19:15+08:00" />
+<meta itemprop="name" content="HTML 5 Web 本地存储">
+<meta itemprop="description" content="localStorage、sessionStorage、Cookie的用法及区别。">
 
-<meta property="og:updated_time" content="2019-12-21T13:42:45+08:00" />
-<meta itemprop="name" content="Categories">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-12-21T15:19:15&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-21T15:19:15&#43;08:00" />
+<meta itemprop="wordCount" content="917">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="HTML 5 Web 本地存储"/>
+<meta name="twitter:description" content="localStorage、sessionStorage、Cookie的用法及区别。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -225,65 +234,217 @@
 
     
     
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">Categories</h1>
-            <p class="text-muted hidden-xs">共 2 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://allen-yangjh.github.io/categories">All</a></li>
-                    <li><a href="https://allen-yangjh.github.io/categories/javascript/">JavaScript</a></li>
-                    <li><a href="https://allen-yangjh.github.io/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h3 class="panel-title">
-                        <a data-toggle="collapse" href="#collapsede9b9ed78d7e2e1dceeffee780e2f919" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>javascript
-                        </a>
-                        <small class="text-muted">(Total1 articles)</small>
-                    </h3>
-                </div>
-                <div id="collapsede9b9ed78d7e2e1dceeffee780e2f919" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="headingjavascript ">
-                    <div class="panel-body">
-                        <div class="collection"><a href="https://allen-yangjh.github.io/2019/12/blog01/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-12-09 18:14:38 &#43;0800 CST"
-        itemprop="datePublished">2019-12-09</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>JavaScript Array 对象
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h3 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse8936f53b23e9dfe2965d9e2ec23a4779" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>随笔
-                        </a>
-                        <small class="text-muted">(Total1 articles)</small>
-                    </h3>
-                </div>
-                <div id="collapse8936f53b23e9dfe2965d9e2ec23a4779" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="heading随笔 ">
-                    <div class="panel-body">
-                        <div class="collection"><a href="https://allen-yangjh.github.io/2019/12/essay01/" class="collection-item" itemprop="url"  target="_blank" >
-    <time datetime="2019-12-21 13:42:45 &#43;0800 CST"
-        itemprop="datePublished">2019-12-21</time>
-    <span>&nbsp;&nbsp;&nbsp;</span>随笔01
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#webstorage">webstorage</a>
+<ul>
+<li><a href="#1-localstorage">1. localStorage</a></li>
+<li><a href="#2-sessionstorage">2. sessionStorage</a></li>
+<li><a href="#localstorage-与-sessionstorage的比较">localStorage 与 sessionStorage的比较</a></li>
+<li><a href="#3-cookie">3. Cookie</a></li>
+</ul></li>
+<li><a href="#localstorage-sessionstorage-cookie共同点-都是保存在浏览器端-且同源的">localStorage、sessionStorage、Cookie共同点：都是保存在浏览器端，且同源的。</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
-    </article>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2019/12/blog02/"
+    >HTML 5 Web 本地存储</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://allen-yangjh.github.io/2019/12/blog02/" class="">
+  <time datetime="2019-12-21 15:19:15 &#43;0800 CST" itemprop="datePublished">2019-12-21</time>
+</a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/blog02/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:917字</span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      <p>localStorage、sessionStorage、Cookie的用法及区别。</p>
+
+<hr />
+
+<h4 id="webstorage">webstorage</h4>
+
+<p>webstorage是本地存储，存储在客户端，包括localStorage和sessionStorage。</p>
+
+<hr />
+
+<h5 id="1-localstorage">1. localStorage</h5>
+
+<p>方法存储的数据没有时间限制。<br />
+第二天、第二周或下一年之后，数据依然可用。</p>
+
+<h5 id="2-sessionstorage">2. sessionStorage</h5>
+
+<p>方法针对一个 session 进行数据存储。<br />
+当用户关闭浏览器窗口后，数据会被删除。</p>
+
+<p><br/>
+<em><u>键值对总是以字符串的形式存储</u></em><br />
+<em>localStorage和sessionStorage使用时使用相同的API：</em></p>
+
+<ul>
+<li><p>存储数据：</p>
+
+<pre><code>sessionStorage.setItem('key', 'str');
+localStorage.setItem('key', 'str');
+</code></pre></li>
+
+<li><p>获取数据：</p>
+
+<pre><code>sessionStorage.getItem('key');
+localStorage.getItem('key');
+</code></pre></li>
+
+<li><p>删除某个数据：</p>
+
+<pre><code>sessionStorage.removeItem('key');
+localStorage.removeItem('key');
+</code></pre></li>
+
+<li><p>删除所有数据：</p>
+
+<pre><code>sessionStorage.clear();
+localStorage.clear();
+</code></pre></li>
+</ul>
+
+<h5 id="localstorage-与-sessionstorage的比较">localStorage 与 sessionStorage的比较</h5>
+
+<ul>
+<li>作用域不同
+
+<ol>
+<li>不同的浏览器无法共享localStorage或sessionStorage中的信息。</li>
+<li>相同浏览器的不同页面之间（页面属于相同域名和端口）可以共享相同的 localStorage，但是不同页面或标签页间无法共享 sessionStorage 的信息。</li>
+</ol></li>
+</ul>
+
+<h5 id="3-cookie">3. Cookie</h5>
+
+<p>生命期为在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。<br />
+存放数据大小为4K左右。有个数限制（各浏览器不同），一般不能超过20个。<br />
+与服务器端通信：每次都会携带在HTTP头中，如果使用cookie保存过多数据会带来性能问题。</p>
+
+<ul>
+<li><p><strong>cookie的优点：具有极高的扩展性和可用性</strong></p>
+
+<ol>
+<li>通过良好的编程，控制保存在cookie中的session对象的大小。</li>
+<li>通过加密和安全传输技术，减少cookie被破解的可能性。</li>
+<li>只有在cookie中存放不敏感的数据，即使被盗取也不会有很大的损失。</li>
+<li>控制cookie的生命期，使之不会永远有效。这样的话偷盗者很可能拿到的就   是一个过期的cookie。</li>
+</ol></li>
+
+<li><p><strong>cookie的缺点：</strong></p>
+
+<ol>
+<li>cookie的长度和数量的限制。每个domain最多只能有20条cookie，每个cookie长度不能超过4KB。否则会被截掉。</li>
+<li>安全性问题。如果cookie被人拦掉了，那个人就可以获取到所有session信息。加密的话也不起什么作用。</li>
+<li>有些状态不可能保存在客户端。例如，为了防止重复提交表单，我们需要在服务端保存一个计数器。若吧计数器保存在客户端，则起不到什么作用。</li>
+</ol></li>
+</ul>
+
+<hr />
+
+<h4 id="localstorage-sessionstorage-cookie共同点-都是保存在浏览器端-且同源的">localStorage、sessionStorage、Cookie共同点：都是保存在浏览器端，且同源的。</h4>
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://allen-yangjh.github.io/2019/12/blog02/" title="HTML 5 Web 本地存储" target="_blank" rel="external">https://allen-yangjh.github.io/2019/12/blog02/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Allen-YangJh" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://allen-yangjh.github.io/Avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Allen-YangJh" target="_blank"><span class="text-dark">Allen Yang</span><small class="ml-1x">Do more, Do better!</small></a></h3>
+        <div>不积跬步无以至千里，不积小流无以成江海。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://allen-yangjh.github.io/2019/12/essay01/" title="随笔01"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,wechat"
+                data-mobile-sites="weibo,wechat"></div>
+        </div>
+    </div>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/Allen-YangJh" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -330,6 +491,7 @@ hljs.initHighlightingOnLoad();
       </script>
 <script type="text/javascript" src="https://allen-yangjh.github.io/js/insight.js"></script>
 
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   </body>
 </html>
