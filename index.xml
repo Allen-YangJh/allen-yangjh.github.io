@@ -5,10 +5,19 @@
     <link>https://allen-yangjh.github.io/</link>
     <description>Recent content on Allen Yang&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 Dec 2019 14:56:42 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 18:56:42 +0800</lastBuildDate>
     
         <atom:link href="https://allen-yangjh.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java 面试技术问题整理（附答案）</title>
+      <link>https://allen-yangjh.github.io/2020/01/blog04/</link>
+      <pubDate>Thu, 02 Jan 2020 18:56:42 +0800</pubDate>
+      
+      <guid>https://allen-yangjh.github.io/2020/01/blog04/</guid>
+      <description>&lt;p&gt;经历了几次面试，把面试过程中所问到的技术问题记录下来。虽然不是什么大公司的技术面，也可以作为学习用，答案是我结合网上资料写的、仅供参考。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Java 入门基础知识点整理</title>
